@@ -1,0 +1,4 @@
+#管理端执行
+curl -sSL https://shipyard-project.com/deploy | bash -s
+#节点执行，IP地址改为相对应
+curl -sSL https://shipyard-project.com/deploy | ACTION=node DISCOVERY=etcd://10.88.142.201:4001 bash -s
